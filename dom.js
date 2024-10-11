@@ -27,3 +27,11 @@ let products = [
     { name: "Smartphone", price: 699.99, description: "Stay connected wherever you are" },
     { name: "Headphones", price: 149.99, description: "Immersive audio experience" }
 ];
+
+document.getElementById("container2").addEventListener("click", function(){
+    for(let i= 0; i < products.length; i++){
+        let productElement = document.createElement("div")
+        productElement.innerHTML = `Name: ${products[i]["name"]} Price: ${products[i]["price"]} Description: ${products[i]["description"]}`
+        document.getElementById("container2").appendChild(productElement)
+    }
+})
