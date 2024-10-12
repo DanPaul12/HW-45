@@ -35,3 +35,9 @@ document.getElementById("container2").addEventListener("click", function(){
         document.getElementById("container2").appendChild(productElement)
     }
 })
+
+/*-------------------------------------------------------------------------------*/
+
+function changeColor(){
+    document.getElementById("box").classList("color")
+}
