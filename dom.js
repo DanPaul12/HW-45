@@ -36,8 +36,16 @@ document.getElementById("container2").addEventListener("click", function(){
     }
 })
 
+document.getElementById("container3").addEventListener("load", function(){
+    for(let i= 0; i < products.length; i++){
+        let productElement = document.createElement("div")
+        productElement.innerHTML = `Name: ${products[i]["name"]} Price: ${products[i]["price"]} Description: ${products[i]["description"]}`
+        document.getElementById("container3").appendChild(productElement)
+    }
+})
+
 /*-------------------------------------------------------------------------------*/
 
 function changeColor(){
-    document.getElementById("box").classList("color")
+    document.getElementById("box").classList.add("color")
 }
