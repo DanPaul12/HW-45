@@ -36,7 +36,7 @@ document.getElementById("container2").addEventListener("click", function(){
     }
 })
 
-document.getElementById("container3").addEventListener("load", function(){
+window.addEventListener("load", function(){
     for(let i= 0; i < products.length; i++){
         let productElement = document.createElement("div")
         productElement.innerHTML = `Name: ${products[i]["name"]} Price: ${products[i]["price"]} Description: ${products[i]["description"]}`
@@ -49,3 +49,19 @@ document.getElementById("container3").addEventListener("load", function(){
 function changeColor(){
     document.getElementById("box").classList.add("color")
 }
+
+function changeColor2(){
+    document.getElementById("box2").classList.add("color")
+}
+
+document.getElementById("box3").addEventListener("mouseover", function(){
+    document.getElementById("box3").classList.add("color")
+} )
+
+document.getElementById("box4").addEventListener("mouseout", function(){
+    document.getElementById("box4").classList.add("color")
+} )
+
+document.getElementById("mybutton").addEventListener("click", function(){
+    alert("Button clicked!")
+})

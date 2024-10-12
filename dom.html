@@ -13,6 +13,10 @@
             margin: auto;
             width: 50%;
             border: 5px black;
+        }.container3{
+            margin: auto;
+            width: 50%;
+            border: 5px black;
         }
         .color{
             color: aquamarine;
@@ -24,11 +28,11 @@
         <fieldset>Input Form <br><br>
             <form id="inputform">
                 <label for="name">Name:</label>
-                <input type="text" id="name" class="name"><br><br>
+                <input type="text" id="name" class="name" required><br><br>
                 <label for="email">Email:</label>
-                <input type="text" id="email" class="email"><br><br>
+                <input type="text" id="email" class="email" required><br><br>
                 <label for="phone">Phone:</label>
-                <input type="text" id="phone" class="phone"><br><br>
+                <input type="text" id="phone" class="phone" required><br><br>
                 <button id="submit" type="submit">Submit</button>
             </form>
         </fieldset>
@@ -42,5 +46,9 @@
         <h2>Products List 2:</h2>
     </div>
     <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div id="box2" ondblclick="changeColor2()">Double click me to change color</div>
+    <div id="box3">Mouse over to change color</div>
+    <div id="box4"">Mouse out to change color</div>
+    <button id="mybutton">Click Me</button>
 </body>
 </html>
